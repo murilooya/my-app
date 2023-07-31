@@ -1,14 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Card ( props : any) {
 
     return (
-        <div className="bg-zinc-200 rounded-2xl max-w-xs max-h-xs overflow-hidden shadow-lg 
-                        hover:scale-105 duration-300 hover:shadow-xl hover:blur-none 
-                        hover:grayscale-0 filter grayscale blur-[2px] contrast-100">
-            <Image className="w-full" src={ props.image } width={400} height={400} alt={ props.alt }/>
+        <div className="bg-zinc-200 rounded-2xl pb-4 max-w-xs max-h-xs overflow-hidden">
+            <Image className="w-fill" src={ props.image } width={400} height={400} alt={ props.alt }/>
             <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{ props.name }</div>
+                <div className="font-bold text-xl mb-2 h-12">{ props.name }</div>
             </div>
             <p className="text-base text-gray-700 px-6">{ props.description }</p>
             <div className="px-6 pt-4 pb-2">     
@@ -18,6 +17,7 @@ export function Card ( props : any) {
                     })
                 }
             </div>
-      </div>   
+            <Link className="bg-red-200 mx-6 px-6 rounded-lg" href={props.link} target='_blank'>Check Out</Link>
+        </div>   
     )
 }
