@@ -5,7 +5,7 @@ export function Card ( props : any) {
 
     return (
         <div className="bg-zinc-200 rounded-2xl pb-4 max-w-xs max-h-xs overflow-hidden">
-            <Image className="w-fill" src={ props.image } width={400} height={400} alt={ props.alt }/>
+            <Image className="object-cover w-full, h-64" src={ props.image } width={400} height={400} alt={ props.alt }/>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 h-12">{ props.name }</div>
             </div>

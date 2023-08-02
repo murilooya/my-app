@@ -9,6 +9,7 @@ export function Projects () {
             <div className="flex gap-4 grid-cols-2 mx-28">
                 <Card image="/images/crops_and_cats.png" link='https://globalgamejam.org/2023/games/farmer-cats-8' name="Crops N'Cats + Bunny DLC (GGJ 2023 - 2º Place)" skills={["C#", "Unity"]} description="A game of cuties cats made in 72 hours in Global Game Jam 2023"/>
                 <Card image="/images/realbotix.png" link='https://realbotix.com/' name="Realbotix - Robot Controller" skills={["C/C++","C#","Arduino","Unity"]} description="A realistic human robotic head who talk and interact with people"/>
+                <Card image="/images/evoverse.jpg" link='https://evoverses.com/' name='Evoverse a crypto game' skills={["Godot", "GDScript"]} description="A crypto card turn based game"/>
             </div>
         </div>
     )
